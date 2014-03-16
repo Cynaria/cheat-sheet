@@ -1,0 +1,134 @@
+body{
+	font-family: 'Ubuntu Mono';
+	color: #2B2B2B;
+	text-align: center;
+}
+header{
+	position: fixed;
+	top: 0;
+	background-color: #8A8A8A;
+	height:20%;
+	width: 100%;
+}
+
+.nav{
+	display:block;
+	position: fixed;
+	top: 5em;
+	width:100%;
+	background-color: #8A8A8A;
+}
+.nav{
+	margin-bottom: 0; 
+}
+.nav li{
+	display: inline;
+	padding: 1em 3em;
+}
+.body{
+	position: static;
+	margin-top: 12%;
+}
+.body div{
+	width: 70%;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1.5em;
+}
+.body table{		
+	width:40%;
+	display: inline-table;
+	margin-top: 2em;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+
+}
+
+.body th{
+	padding: .5em;
+	font-weight: bold;
+}
+.body td{
+	padding: .5em;
+	border-bottom: 1px solid #8A8A8A;
+}
+
+#html{
+	background-color: #8A8A8A;
+}
+
+#html-show{
+	background-color: #FFFFCC;
+}
+
+#html-show th{
+	background-color:#E3E3A3;
+}
+
+#css{
+	background-color: #8A8A8A; /**/
+}
+
+#css-show{
+	background-color: #FFA3A3;
+}
+
+#css-show th{
+	background-color: #E38D8D;
+}
+#js{
+	background-color: #8A8A8A;/*#47FFFF*/
+}
+
+#js-show{
+	background-color: #85FFFF;
+}
+#js-show th{
+	background-color: #55E6E6;
+}
+#sql{
+	background-color: #8A8A8A;/*#*/
+}
+
+#sql-show{
+	background-color: #C7FF8F;
+}
+
+#sql-show th{
+	background-color: #A5E665;
+}
+
+#git{
+	background-color: #8A8A8A;/*#*/
+}
+
+#git-show{
+	background-color: #CD9CFF;
+}
+
+#git-show th{
+	background-color: #A870E0;
+}
+
+#regex{
+	background-color: #8A8A8A; /*#*/
+}
+#regex-show{
+	background-color: #FFCF9E;
+}
+#regex-show th{
+	background-color: #D9A36C;
+}
+#html-show,
+#css-show,
+#js-show,
+#sql-show,
+#git-show,
+#regex-show{
+	display: none;
+}
+
+
+/*880px break point*/

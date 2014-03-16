@@ -1,0 +1,2035 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>DBC Coding Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DBC Coding Cheat Sheets</h1>
+        <div class="nav">
+    		<ul>
+	        <li id="html">HTML</li>
+	        <li id="css">CSS</li>
+	        <li id="js">Javascript</li>
+	        <li id="sql">SQL</li>
+	        <li id="git">GIT</li>
+	        <li id="regex">Regex</li>
+        </ul>
+      </div>
+    </header>
+    <div class="body">
+    <div id="html-show">
+        <h2>HTML5</h2>
+        <br>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Attributes</th>
+            </tr>
+            <tr>
+                <td>&lt;!--&nbsp; --&gt;
+                    <br>
+                </td>
+                <td>Comment</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>&lt;!Doctype &gt;</td>
+                <td>Document Type
+                    <br>
+                </td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>hyperlink</td>
+                <td>href | hreflang | media | ping | rel | target | type
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;</td>
+                <td>bold text
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;body&gt;</td>
+                <td>body element
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>element container
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;</td>
+                <td>emphasized text
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>form</td>
+                <td>action | data | replace | accept | accept-charset | enctype | method | target
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt; to &lt;h6&gt;
+                    <br>
+                </td>
+                <td>header 1 to header 6
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;head&gt;</td>
+                <td>information about the document
+                    <br>
+                </td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>&lt;html&gt;
+                    <br>
+                </td>
+                <td>html document
+                    <br>
+                </td>
+                <td>manifest</td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt;</td>
+                <td>italic text
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>image
+                    <br>
+                </td>
+                <td>alt | src | height | ismap | usemap | width
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;link&gt;</td>
+                <td>resource reference
+                    <br>
+                </td>
+                <td>href | rel | media | hreflang | type | sizes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;meta&gt;</td>
+                <td>meta information(head)
+                    <br>
+                </td>
+                <td>charset | content | http-equiv | name
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>paragraph</td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;script&gt;</td>
+                <td>script</td>
+                <td>async | type | defer | src | charset
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>selectable list
+                    <br>
+                </td>
+                <td>autofocus | data | disabled | form | multiple | name
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>table
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>table body
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>table cell
+                    <br>
+                </td>
+                <td>colspan | rowspan | headers
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;th&gt;</td>
+                <td>table header
+                    <br>
+                </td>
+                <td>colspan | rowspan | scope
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>table row
+                    <br>
+                </td>
+                <td>global attributes
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;title&gt;</td>
+                <td>document title (head)
+                    <br>
+                </td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt;</td>
+                <td>ordered list
+                    <br>
+                </td>
+                <td>start | reversed
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;</td>
+                <td>unordered list
+                    <br>
+                </td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>&lt;li&gt;</td>
+                <td>list item
+                    <br>
+                </td>
+                <td>value</td>
+            </tr>
+        </table>
+    </div>
+    <div id="css-show">
+        <h2>CSS3</h2>
+        <table>
+            <tr>
+                <th colspan="3">Background</th>
+            </tr>
+            <tr>
+                <td>background
+                    <br>
+                </td>
+                <td colspan="2">background-image
+                    <br>background-position
+                    <br>background-size
+                    <br>background-repeat,
+                    <br>background-attachment
+                    <br>background-origin
+                    <br>background-clip
+                    <br>background-color</td>
+            </tr>
+            <tr>
+                <td>background-attachment</td>
+                <td colspan="2">scroll | fixed
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>background-break</td>
+                <td colspan="2">bounding-box | each-box | continuous
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>background-clip</td>
+                <td colspan="2">length
+                    <br>%
+                    <br>border-box | padding-box | content-box | no-clip
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td colspan="2">color
+                    <br>transparent
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>background-image
+                    <br>
+                </td>
+                <td colspan="2">url
+                    <br>none
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>background-origin</td>
+                <td colspan="2">border-box | padding-box | content-box
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>background-position</td>
+                <td colspan="2">top left | top center | top right |
+                    <br>center left | center center | center right |
+                    <br>bottom left | bottom center | bottom right</td>
+            </tr>
+            <tr>
+                <td>background-repeat</td>
+                <td colspan="2">repeat | repeat-x | repeat-y | no-repeat
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th colspan="2">Border</th>
+            </tr>
+            <tr>
+                <td>border
+                    <br>
+                </td>
+                <td>border-width
+                    <br>border-style
+                    <br>border-color</td>
+            </tr>
+            <tr>
+                <td>border-break</td>
+                <td>border-width
+                    <br>border-style
+                    <br>color
+                    <br>close</td>
+            </tr>
+            <tr>
+                <td>border-bottom</td>
+                <td>border-bottom-width
+                    <br>border-style
+                    <br>border-color
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-bottom-color</td>
+                <td>border-color</td>
+            </tr>
+            <tr>
+                <td>border-bottom-style</td>
+                <td>border-style
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-bottom-width
+                    <br>
+                </td>
+                <td>thin | medium | thick
+                    <br>length
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-collapse</td>
+                <td>collapse | separate
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-color</td>
+                <td>color</td>
+            </tr>
+            <tr>
+                <td>border-image</td>
+                <td>image
+                    <br>[ number / %
+                    <br>border-width
+                    <br>stretch | repeat | round ]
+                    <br>&nbsp;none</td>
+            </tr>
+            <tr>
+                <td>border-left</td>
+                <td>border-left-width
+                    <br>border-style
+                    <br>border-color
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-left-style</td>
+                <td>border-style</td>
+            </tr>
+            <tr>
+                <td>border-left-color</td>
+                <td>color</td>
+            </tr>
+            <tr>
+                <td>border-left-width</td>
+                <td>border-width</td>
+            </tr>
+            <tr>
+                <td>border-right</td>
+                <td>border-right-width
+                    <br>border-right-style
+                    <br>border-right-color
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-right-width</td>
+                <td>border-width</td>
+            </tr>
+            <tr>
+                <td>border-right-style</td>
+                <td>border-style</td>
+            </tr>
+            <tr>
+                <td>border-right-width</td>
+                <td>border-width</td>
+            </tr>
+            <tr>
+                <td>border-top</td>
+                <td>border-top-width
+                    <br>border-style
+                    <br>border-color</td>
+            </tr>
+            <tr>
+                <td>border-top-color</td>
+                <td>border-color</td>
+            </tr>
+            <tr>
+                <td>border-top-style</td>
+                <td>border-style</td>
+            </tr>
+            <tr>
+                <td>border-top-width</td>
+                <td>border-width</td>
+            </tr>
+            <tr>
+                <td>border-width</td>
+                <td>thin | medium | thick
+                    <br>length
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>border-radius</td>
+                <td>border-top-right-radius,
+                    <br>border-bottom-right-radius
+                    <br>border-bottom-left-radius
+                    <br>border-top-left-radius</td>
+            </tr>
+            <tr>
+                <td>border-top-right-radius</td>
+                <td>length</td>
+            </tr>
+            <tr>
+                <td>border-bottom-right-radius</td>
+                <td>length</td>
+            </tr>
+            <tr>
+                <td>border-bottom-left-radius</td>
+                <td>length</td>
+            </tr>
+            <tr>
+                <td>border-top-left-radius</td>
+                <td>length</td>
+            </tr>
+            <tr>
+                <td>box-shadow</td>
+                <td>inset || [ length, length, length, length || &lt;color&gt; ]none</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th colspan="2">Box-Model</th>
+            </tr>
+            <tr>
+                <td>clear</td>
+                <td>left | right | both | none
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>display</td>
+                <td>none | inline | block | inline-block | list-item | run-in | compact | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | ruby | ruby-base | ruby-text | ruby-base-group | ruby-text-group</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>left | right | none
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>auto
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>max-height
+                    <br>
+                </td>
+                <td>none
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>max-width</td>
+                <td>none
+                    <br>length
+                    <br>%</td>
+            </tr>
+            <tr>
+                <td>min-height</td>
+                <td>none | inherit
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>min-width</td>
+                <td>none | inherit
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>auto
+                    <br>%
+                    <br>length
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>margin-top
+                    <br>margin-right
+                    <br>margin-bottom
+                    <br>margin-left
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>margin-bottom</td>
+                <td>auto
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>margin-left</td>
+                <td>auto
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>margin-right</td>
+                <td>auto
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>margin-top</td>
+                <td>auto
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>padding-top
+                    <br>padding-right
+                    <br>padding-bottom
+                    <br>padding-left
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>padding-top</td>
+                <td>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>padding-right</td>
+                <td>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>padding-bottom</td>
+                <td>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>padding-left</td>
+                <td>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>padding-top</td>
+                <td>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>marquee-loop</td>
+                <td>infinite
+                    <br>number
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>marquee-direction</td>
+                <td>forward | reverse
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>marquee-play-count</td>
+                <td>infinite
+                    <br>integer
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>marquee-speed</td>
+                <td>slow | normal | fast
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>marquee-style</td>
+                <td>scroll | slide | alternate
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>overflow</td>
+                <td>visible | hidden | scroll | auto | no-display | no-content
+                    <br>overflow-x
+                    <br>overflow-y</td>
+            </tr>
+            <tr>
+                <td>overflow-style</td>
+                <td>auto | marquee-line | marquee-block
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>overflow-x</td>
+                <td>visible | hidden | scroll | auto | no-display | no-content</td>
+            </tr>
+            <tr>
+                <td>overflow-y</td>
+                <td>visible | hidden | scroll | auto | no-display | no-content</td>
+            </tr>
+            <tr>
+                <td>rotation</td>
+                <td>angle</td>
+            </tr>
+            <tr>
+                <td>rotation-point</td>
+                <td>position (paired value off-set)
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>visibility</td>
+                <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th colspan="2">Font</th>
+            </tr>
+            <tr>
+                <td>font</td>
+                <td>font-style
+                    <br>font-variant
+                    <br>font-weight
+                    <br>font-size/line-height
+                    <br>font-family
+                    <br>caption | icon | menu | message-box | small-caption | status-bar</td>
+            </tr>
+            <tr>
+                <td>font-family</td>
+                <td>family-name
+                    <br>generic-family
+                    <br>inherit
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | inherit
+                    <br>length
+                    <br>%
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>font-size-adjust</td>
+                <td>none | inherit
+                    <br>number
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>font-stretch</td>
+                <td>normal | wider | narrower | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded | inherit,
+                    <br>length
+                    <br>%</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>normal | italic | oblique | inherit
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>font-variat</td>
+                <td>normal | small-caps | inherit
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>font-weight
+                    <br>
+                </td>
+                <td>normal | bold | bolder | lighter | 100 - 900 | inherit
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th colspan="2">Pseudo-Class</th>
+            </tr>
+            <tr>
+                <td>:active</td>
+                <td>an activated element
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:focus</td>
+                <td>and element while the element has focus
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:visited</td>
+                <td>a visited link
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:hover</td>
+                <td>an element when you mouse over it
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:link</td>
+                <td>an unvisited link
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:disabled</td>
+                <td>an element while the element is disabled
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:enabled</td>
+                <td>an element while the element is enabled
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:checked</td>
+                <td>an element (form element control) that is checked
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:selection</td>
+                <td>an element that is currently selected or highlighted by the user
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:lang</td>
+                <td>Allows the author to specify a language to use in a specified element
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-child(n)</td>
+                <td>an element that is the n-th sibling
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-last-child
+                    <br>
+                </td>
+                <td>an element that is the last sibling
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:only-child</td>
+                <td>an element that is the only child
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-of-type(n)</td>
+                <td>an element that is the n-th sibling of its type counting from the last sibling
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:nth-last-of-type(n)</td>
+                <td>an element that is the n-th sibling of its type counting from the last sibling
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:last-of-type</td>
+                <td>an element that is the last sibling of its type
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:first-of-type</td>
+                <td>an element that is the first sibling of its type
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:only-of-type</td>
+                <td>an element that is the only child of that type
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:empty</td>
+                <td>an element that has no children
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:root</td>
+                <td>root element within the document
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:not(x)</td>
+                <td>an element not represented by the argument 'x'
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:target</td>
+                <td></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th colspan="2">Pseudo-Element</th>
+            </tr>
+            <tr>
+                <td>::first-letter</td>
+                <td>Adds special style to the first letter of a text
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>:: first-line
+                    <br>
+                </td>
+                <td>adds special style to the first line of a text
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>::before</td>
+                <td>Inserts some content before an element
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>::after
+                    <br>
+                </td>
+                <td>Inserts some content after an element
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="js-show">
+    	<h2>Javascript</h2>
+    <table>
+        <tr>
+            <th colspan="2">Value Types
+                <br>
+            </th>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>Any numeric value
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>string</td>
+            <td>Characters inside quote marks
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Boolean
+                <br>
+            </td>
+            <td>True or False
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Null</td>
+            <td>Empty and meaningless
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Object</td>
+            <td>Any value associated with the object
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Operators
+                <br>
+            </th>
+        </tr>
+        <tr>
+            <td>x + y
+                <br>(numeric)
+                <br>
+            </td>
+            <td>adds x and y together
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x + y
+                <br>(string)
+                <br>
+            </td>
+            <td>concatenates x and y together
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x - y
+                <br>
+            </td>
+            <td>subtracts y from x
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x * y
+                <br>
+            </td>
+            <td>multiplies x and y together
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x / y
+                <br>
+            </td>
+            <td>divides x by y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x % y
+                <br>
+            </td>
+            <td>Modulus: The remainder when x is divided by y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x++, ++x
+                <br>
+            </td>
+            <td>Adds one to x
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x--, --x
+                <br>
+            </td>
+            <td>Subtracts on from x
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>-x</td>
+            <td></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Assignments
+                <br>
+            </th>
+        </tr>
+        <tr>
+            <td>var x = y
+                <br>
+            </td>
+            <td>sets x equal to y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x += y
+                <br>
+            </td>
+            <td>same as x = x + y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x -= y
+                <br>
+            </td>
+            <td>same as x = x - y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x * = y
+                <br>
+            </td>
+            <td>same as x = x * y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x / = y
+                <br>
+            </td>
+            <td>same as x = x/y
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>x %= y
+                <br>
+            </td>
+            <td>same as x = x % y
+                <br>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Array functions
+                <br>
+            </th>
+        </tr>
+        <tr>
+            <td>.length
+                <br>
+            </td>
+            <td>returns length of an array
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>.push()
+                <br>
+            </td>
+            <td>Adds one or more items to the end of an array
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>.unshift()
+                <br>
+            </td>
+            <td>Adds one or more items to the beginning of an array
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>.pop()
+                <br>
+            </td>
+            <td>Removes the last item from the array
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>.unshift()
+                <br>
+            </td>
+            <td>Removes the first item from the array
+                <br>
+            </td>
+        </tr>
+    </table>
+    <table>
+  <tr>
+    <th colspan="2">Event Handlers<br></th>
+  </tr>
+  <tr>
+    <td>onabort<br></td>
+    <td>The user aborted loading the page<br></td>
+  </tr>
+  <tr>
+    <td>onblur<br></td>
+    <td>The user left the object<br></td>
+  </tr>
+  <tr>
+    <td>onchange<br></td>
+    <td>The user changed the object<br></td>
+  </tr>
+  <tr>
+    <td>onclick<br></td>
+    <td>The user clicked an object<br></td>
+  </tr>
+  <tr>
+    <td>onerror<br></td>
+    <td>The script encountered an error<br></td>
+  </tr>
+  <tr>
+    <td>onfocus</td>
+    <td>The user made an object active<br></td>
+  </tr>
+  <tr>
+    <td>onload</td>
+    <td>The object finished loading<br></td>
+  </tr>
+  <tr>
+    <td>onmouseover</td>
+    <td>The cursor moved over an object<br></td>
+  </tr>
+  <tr>
+    <td>onselect</td>
+    <td>The user selected the contents of an object<br></td>
+  </tr>
+  <tr>
+    <td>onsubmit</td>
+    <td>The user submitted a form<br></td>
+  </tr>
+  <tr>
+    <td>onunload</td>
+    <td>The user left the page<br></td>
+  </tr>
+  <tr>
+    <td>onmove</td>
+    <td>The window is moved<br></td>
+  </tr>
+  <tr>
+    <td>onmousedown<br></td>
+    <td>A mouse button is pressed down<br></td>
+  </tr>
+  <tr>
+    <td>onmouseup</td>
+    <td>A mouse button is released<br></td>
+  </tr>
+  <tr>
+    <td>onmousemove<br></td>
+    <td>The mouse moves<br></td>
+  </tr>
+  <tr>
+    <td>ondblclick</td>
+    <td>A double click of a mouse button<br></td>
+  </tr>
+  <tr>
+    <td>onreset</td>
+    <td>A reset button is clicked on a form<br></td>
+  </tr>
+  <tr>
+    <td>onkeydown</td>
+    <td>Triggered when a key is pressed down<br></td>
+  </tr>
+  <tr>
+    <td>onkeyup</td>
+    <td>Triggered when a key is released<br></td>
+  </tr>
+  <tr>
+    <td>onkeypress</td>
+    <td>Triggered when a key is pressed and then released<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Comparisons<br></th>
+  </tr>
+  <tr>
+    <td>x == y<br></td>
+    <td>Returns true if x and y are equal<br></td>
+  </tr>
+  <tr>
+    <td>x === y<br></td>
+    <td>Returns true if x and y are identical<br></td>
+  </tr>
+  <tr>
+    <td>x != y<br></td>
+    <td>Returns true if x and y are NOT equal<br></td>
+  </tr>
+  <tr>
+    <td>x !== y<br></td>
+    <td>Returns true if x and y are NOT identical<br></td>
+  </tr>
+  <tr>
+    <td>x &gt; y<br></td>
+    <td>Returns true if x is greater than y<br></td>
+  </tr>
+  <tr>
+    <td>x &gt;= y<br></td>
+    <td>Returns true if x is greater than or equal to y<br></td>
+  </tr>
+  <tr>
+    <td>x &lt; y<br></td>
+    <td>Returns true if x is less than y<br></td>
+  </tr>
+  <tr>
+    <td>x &lt;= y<br></td>
+    <td>Returns true if x is less than or equal to y<br></td>
+  </tr>
+  <tr>
+    <td>x &amp;&amp; y<br></td>
+    <td>Returns true if both x and y are true<br></td>
+  </tr>
+  <tr>
+    <td>x || y<br></td>
+    <td>Returns true if either x or y are true<br></td>
+  </tr>
+  <tr>
+    <td>!x</td>
+    <td>Returns true if x is false<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">jQuery - Adding and removing content to a page<br></th>
+  </tr>
+  <tr>
+    <td>html()<br></td>
+    <td>Retrieve or replaces the HTML inside the selection<br></td>
+  </tr>
+  <tr>
+    <td>text()</td>
+    <td>Works like html() but does not accept HTML tags<br></td>
+  </tr>
+  <tr>
+    <td>append()</td>
+    <td>Adds HTML as the last child element of the selected element<br></td>
+  </tr>
+  <tr>
+    <td>prepend</td>
+    <td>Like append(), but adds HTML directly after the opening tag for the selection<br></td>
+  </tr>
+  <tr>
+    <td>before()</td>
+    <td>Add HTML outside of a selection, just before the selected element</td>
+  </tr>
+  <tr>
+    <td>after()<br></td>
+    <td>Add HTML outside of a selection, just after the selected element</td>
+  </tr>
+  <tr>
+    <td>remove()<br></td>
+    <td>Completely remove a selected element</td>
+  </tr>
+  <tr>
+    <td>replaceWith()<br></td>
+    <td>Completely replace selected element<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">jQuery Filters<br></th>
+  </tr>
+  <tr>
+    <td>:even and :odd<br></td>
+    <td>Selects every other element in a group<br></td>
+  </tr>
+  <tr>
+    <td>:first and :last<br></td>
+    <td>Selects the first or the last element in a group<br></td>
+  </tr>
+  <tr>
+    <td>:not()<br></td>
+    <td>to find elements that don't match a particular selctor type<br></td>
+  </tr>
+  <tr>
+    <td>:has()</td>
+    <td>finds elements that contain another selector<br></td>
+  </tr>
+  <tr>
+    <td>:contains()</td>
+    <td>finds elements that contain specific text<br></td>
+  </tr>
+  <tr>
+    <td>:hidden<br></td>
+    <td>Locates elements that are hidden<br></td>
+  </tr>
+  <tr>
+    <td>:visible<br></td>
+    <td>Locates elements that are visible<br></td>
+  </tr>
+</table>
+</div>
+    <div id="sql-show">
+    	<h2>SQL</h2>
+    	<table>
+  <tr>
+    <th colspan="2">SQL Data Types<br></th>
+  </tr>
+  <tr>
+    <td>CHAR</td>
+    <td>String (0-255)<br></td>
+  </tr>
+  <tr>
+    <td>VARCHAR</td>
+    <td>String (0-255)<br></td>
+  </tr>
+  <tr>
+    <td>TINYTEXT</td>
+    <td>String(0-255)</td>
+  </tr>
+  <tr>
+    <td>TEXT</td>
+    <td>String(0-65535)</td>
+  </tr>
+  <tr>
+    <td>MEDIUMTEXT</td>
+    <td>String(0-16777215)</td>
+  </tr>
+  <tr>
+    <td>MEDIUMBLOB</td>
+    <td>String(0-16777215)</td>
+  </tr>
+  <tr>
+    <td>LONGTEXT</td>
+    <td>String(0-4294967295)</td>
+  </tr>
+  <tr>
+    <td>LONGBLOB</td>
+    <td>String(0-4294967295)</td>
+  </tr>
+  <tr>
+    <td>TINYINT (unsigned)<br></td>
+    <td>Integer(-128 to 127)<br></td>
+  </tr>
+  <tr>
+    <td>SMALLINT (unsigned)<br></td>
+    <td>Integer(-32768 to 32767<br></td>
+  </tr>
+  <tr>
+    <td>MEDIUMINT (unsigned)<br></td>
+    <td>Integer(-8388608 to 8388607)</td>
+  </tr>
+  <tr>
+    <td>INT (unsigned)<br></td>
+    <td>Integer (-2147­483648 to 214748­3647)</td>
+  </tr>
+  <tr>
+    <td>BIGINT (unsigned)<br></td>
+    <td>Integer (-9223­372­036­854­775808 to 922337­203­685­477­5807)</td>
+  </tr>
+  <tr>
+    <td>FLOAT</td>
+    <td>Decimal (precise to 23 digits)<br></td>
+  </tr>
+  <tr>
+    <td>DOUBLE</td>
+    <td>Decimal (24 to 53 digits)<br></td>
+  </tr>
+  <tr>
+    <td>DECIMAL</td>
+    <td>"DOUBLE" stored as string<br></td>
+  </tr>
+  <tr>
+    <td>DATE<br></td>
+    <td>YYYY-MM-DD</td>
+  </tr>
+  <tr>
+    <td>DATETIME</td>
+    <td>YYYY-MM-DD HH:MM:SS<br></td>
+  </tr>
+  <tr>
+    <td>TIMESTAMP</td>
+    <td>YYYYMMDDHHMMSS</td>
+  </tr>
+  <tr>
+    <td>TIME</td>
+    <td>HH:MM:SS</td>
+  </tr>
+  <tr>
+    <td>ENUM</td>
+    <td>One of preset options<br></td>
+  </tr>
+  <tr>
+    <td>SET</td>
+    <td>Selection of preset options<br></td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">SQL Grouping Functions<br></th>
+  </tr>
+  <tr>
+    <td>AVG</td>
+    <td>MAX<br></td>
+  </tr>
+  <tr>
+    <td>BIT_AND</td>
+    <td>STD</td>
+  </tr>
+  <tr>
+    <td>BIT_OR</td>
+    <td>STDDEV</td>
+  </tr>
+  <tr>
+    <td>COUNT</td>
+    <td>SUM</td>
+  </tr>
+  <tr>
+    <td>GROUP_CONCAT</td>
+    <td>VARIANCE</td>
+  </tr>
+  <tr>
+    <td>MIN</td>
+    <td><br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">SQL syntax<br></th>
+  </tr>
+  <tr>
+    <td>SELECT</td>
+    <td>Used to query the database<br></td>
+  </tr>
+  <tr>
+    <td>FROM</td>
+    <td>Determines the input data<br></td>
+  </tr>
+  <tr>
+    <td>WHERE</td>
+    <td>Filters input data<br></td>
+  </tr>
+  <tr>
+    <td>GROUP BY, HAVING<br></td>
+    <td>aggregates the resulting rows according to GROUP BY clause<br></td>
+  </tr>
+  <tr>
+    <td>DISTINCT</td>
+    <td>removes duplicate rows<br></td>
+  </tr>
+  <tr>
+    <td>JOIN table ON selector<br></td>
+    <td><br></td>
+  </tr>
+</table>
+    </div>
+    <div id="git-show">
+    	<h2>Git</h2>
+    	<table>
+  <tr>
+    <th colspan="2">Create Repository<br></th>
+  </tr>
+  <tr>
+    <td>From existing directory<br></td>
+    <td>cd project_dir<br>git init<br>git add .<br></td>
+  </tr>
+  <tr>
+    <td>From other repository<br></td>
+    <td>git clone existing_dir new_dir<br>git clone git://github.com/user/repo.git<br>git clone https://github.com/user/repo.git<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Local Changes<br></th>
+  </tr>
+  <tr>
+    <td>Changed in working directory<br></td>
+    <td>git status<br></td>
+  </tr>
+  <tr>
+    <td>Tracked file changes<br></td>
+    <td>git diff<br></td>
+  </tr>
+  <tr>
+    <td>Add changed files<br></td>
+    <td>git add file1 file2 file3<br></td>
+  </tr>
+  <tr>
+    <td>remove file<br></td>
+    <td>git rm file<br>git rm dir/ -r (recursive under directory)<br></td>
+  </tr>
+  <tr>
+    <td>see files ready for commit<br></td>
+    <td>git diff --cached<br></td>
+  </tr>
+  <tr>
+    <td>Commit changes<br></td>
+    <td>git commit<br>git commit -m "My message"<br>git commit -a -m "My message"<br>(tracked files only, auto add)<br></td>
+  </tr>
+  <tr>
+    <td>Change last commit<br></td>
+    <td>git commit --amend<br></td>
+  </tr>
+  <tr>
+    <td>Revert changes to file<br></td>
+    <td>git checkout -- file<br></td>
+  </tr>
+  <tr>
+    <td>Revert changes (new commit)<br></td>
+    <td>git revert HEAD<br></td>
+  </tr>
+  <tr>
+    <td>Return to last committed state<br></td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">History<br></th>
+  </tr>
+  <tr>
+    <td>Show all commits<br></td>
+    <td>git log<br></td>
+  </tr>
+  <tr>
+    <td>Short Format<br></td>
+    <td>git log --pretty=short<br></td>
+  </tr>
+  <tr>
+    <td>Patches</td>
+    <td>git log -p<br></td>
+  </tr>
+  <tr>
+    <td>Show file commits<br></td>
+    <td>git log file<br></td>
+  </tr>
+  <tr>
+    <td>Show directory commits<br></td>
+    <td>git log dir/<br></td>
+  </tr>
+  <tr>
+    <td>Stats</td>
+    <td>git log --stat<br></td>
+  </tr>
+  <tr>
+    <td>Who changed file<br></td>
+    <td>git blame file<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Merge/Rebase<br></th>
+  </tr>
+  <tr>
+    <td>Merge branch into current<br></td>
+    <td>git merge branch<br></td>
+  </tr>
+  <tr>
+    <td>Rebase into branch<br></td>
+    <td>git rebase branch<br>git rebase master branch<br></td>
+  </tr>
+  <tr>
+    <td>Abort rebase</td>
+    <td>git rebase --abort<br></td>
+  </tr>
+  <tr>
+    <td>Merge tool to solve conflicts<br></td>
+    <td>git mergetool<br></td>
+  </tr>
+  <tr>
+    <td>Conflicts against base file<br></td>
+    <td>git diff --base file<br></td>
+  </tr>
+  <tr>
+    <td>Diff other users changes<br></td>
+    <td>git diff --theirs file<br></td>
+  </tr>
+  <tr>
+    <td>Diff your changes<br></td>
+    <td>git diff --ours file<br></td>
+  </tr>
+  <tr>
+    <td>After resolving conflicts<br></td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Remote Update / Publish<br></th>
+  </tr>
+  <tr>
+    <td>List remotes<br></td>
+    <td>git remote -v<br></td>
+  </tr>
+  <tr>
+    <td>Show information<br></td>
+    <td>git remote show remote<br></td>
+  </tr>
+  <tr>
+    <td>Add remote<br></td>
+    <td>git remote add path/url<br></td>
+  </tr>
+  <tr>
+    <td>Fetch changes<br></td>
+    <td>git fetch remote<br></td>
+  </tr>
+  <tr>
+    <td>Fetch + merge<br></td>
+    <td>git pull remote branch<br></td>
+  </tr>
+  <tr>
+    <td>Publish local to remote<br></td>
+    <td>git push remote branch<br></td>
+  </tr>
+  <tr>
+    <td>Delete remote branch<br></td>
+    <td>git push remote :branch<br></td>
+  </tr>
+  <tr>
+    <td>Publish tags<br></td>
+    <td>git rebase --continue<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Branching/Tagging<br></th>
+  </tr>
+  <tr>
+    <td>List branches<br></td>
+    <td>git branch<br></td>
+  </tr>
+  <tr>
+    <td>Switch to branch<br></td>
+    <td>git checkout branch<br></td>
+  </tr>
+  <tr>
+    <td>Create new branch<br></td>
+    <td>git branch new<br></td>
+  </tr>
+  <tr>
+    <td>Create branch from exisiting <br></td>
+    <td>git branch new existing<br></td>
+  </tr>
+  <tr>
+    <td>Delete branch<br></td>
+    <td>git branch -d branch<br></td>
+  </tr>
+  <tr>
+    <td>Tag current commit<br></td>
+    <td>git push remote branc<br></td>
+  </tr>
+</table>
+    </div>
+    <div id="regex-show">
+    	<h2>Regular Expressions</h2>
+    	<table>
+  <tr>
+    <th colspan="2">Anchors<br></th>
+  </tr>
+  <tr>
+    <td>^<br></td>
+    <td>Start of string, or start of line in multi-line pattern<br></td>
+  </tr>
+  <tr>
+    <td>\A</td>
+    <td>Start of string<br></td>
+  </tr>
+  <tr>
+    <td>$</td>
+    <td>End of string, or end of line in multi-line pattern<br></td>
+  </tr>
+  <tr>
+    <td>\Z</td>
+    <td>End of string<br></td>
+  </tr>
+  <tr>
+    <td>\b</td>
+    <td>Word boundary<br></td>
+  </tr>
+  <tr>
+    <td>\B</td>
+    <td>Not word boundary<br></td>
+  </tr>
+  <tr>
+    <td>\&lt;</td>
+    <td>start of word<br></td>
+  </tr>
+  <tr>
+    <td>\&gt;</td>
+    <td>End of word<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Character Classes<br></th>
+  </tr>
+  <tr>
+    <td>\c<br></td>
+    <td>Control character<br></td>
+  </tr>
+  <tr>
+    <td>\s</td>
+    <td>White space<br></td>
+  </tr>
+  <tr>
+    <td>\S</td>
+    <td>Not white space<br></td>
+  </tr>
+  <tr>
+    <td>\d</td>
+    <td>Digit</td>
+  </tr>
+  <tr>
+    <td>\D</td>
+    <td>Not digit<br></td>
+  </tr>
+  <tr>
+    <td>\w</td>
+    <td>Word</td>
+  </tr>
+  <tr>
+    <td>\W</td>
+    <td>Not word<br></td>
+  </tr>
+  <tr>
+    <td>\x</td>
+    <td>Hexadecimal digit<br></td>
+  </tr>
+  <tr>
+    <td>\O</td>
+    <td>Octal digit</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">POSIX<br></th>
+  </tr>
+  <tr>
+    <td>[:upper:]<br></td>
+    <td>Upper case letters<br></td>
+  </tr>
+  <tr>
+    <td>[:lower:]</td>
+    <td>Lower case letters<br></td>
+  </tr>
+  <tr>
+    <td>[:alpha:]</td>
+    <td>All letters<br></td>
+  </tr>
+  <tr>
+    <td>[:alnum:]</td>
+    <td>Digits and letters<br></td>
+  </tr>
+  <tr>
+    <td>[:digit:]</td>
+    <td>Digit<br></td>
+  </tr>
+  <tr>
+    <td>[:xdigit:]</td>
+    <td>Hexadecimal digits<br></td>
+  </tr>
+  <tr>
+    <td>[:punct:]</td>
+    <td>Punctuation</td>
+  </tr>
+  <tr>
+    <td>[:blank:]</td>
+    <td>Space and tab<br></td>
+  </tr>
+  <tr>
+    <td>[:space:]</td>
+    <td>Blank characters<br></td>
+  </tr>
+  <tr>
+    <td>[:cntrl:]</td>
+    <td>Control characters<br></td>
+  </tr>
+  <tr>
+    <td>[:graph:]</td>
+    <td>Printed characters<br></td>
+  </tr>
+  <tr>
+    <td>[:print:]</td>
+    <td>Printed characters and spaces<br></td>
+  </tr>
+  <tr>
+    <td>[:word:]</td>
+    <td>Digits, letters and underscore<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Assertions</th>
+  </tr>
+  <tr>
+    <td>?=<br></td>
+    <td>Lookahead assertion<br></td>
+  </tr>
+  <tr>
+    <td>?!<br></td>
+    <td>Negative lookahead<br></td>
+  </tr>
+  <tr>
+    <td>?&lt;=</td>
+    <td>Lookbehind assertion<br></td>
+  </tr>
+  <tr>
+    <td>?!= or ?&lt;!<br></td>
+    <td>Negative lookbehind<br></td>
+  </tr>
+  <tr>
+    <td>?&gt;</td>
+    <td>Once-only Subexpression<br></td>
+  </tr>
+  <tr>
+    <td>?()</td>
+    <td>Condition [if then]<br></td>
+  </tr>
+  <tr>
+    <td>?()|</td>
+    <td>Condition [if then else]<br></td>
+  </tr>
+  <tr>
+    <td>?#<br></td>
+    <td>Comment</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Quantifiers</th>
+  </tr>
+  <tr>
+    <td>*<br></td>
+    <td>0 or more<br></td>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>1 or more<br></td>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td>0 or 1<br></td>
+  </tr>
+  <tr>
+    <td>{3}</td>
+    <td>Exactly 3<br></td>
+  </tr>
+  <tr>
+    <td>{3,}</td>
+    <td>3 or more<br></td>
+  </tr>
+  <tr>
+    <td>{3,5}</td>
+    <td>3, 4 or 5<br></td>
+  </tr>
+  <tr>
+    <td colspan="2">Add a ? to a quantifier to make it ungreedy.<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Escape Sequences<br></th>
+  </tr>
+  <tr>
+    <td>\<br></td>
+    <td>Escape following Character<br></td>
+  </tr>
+  <tr>
+    <td>\Q</td>
+    <td>Begin literal sequence<br></td>
+  </tr>
+  <tr>
+    <td>\E</td>
+    <td>End literal Sequence<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Groups and Ranges<br></th>
+  </tr>
+  <tr>
+    <td>.<br></td>
+    <td>Any character except new line (\n)<br></td>
+  </tr>
+  <tr>
+    <td>(a|b)</td>
+    <td>a or b<br></td>
+  </tr>
+  <tr>
+    <td>(?...)</td>
+    <td>Passive (non-capturing) group<br></td>
+  </tr>
+  <tr>
+    <td>[abc]</td>
+    <td>range (a or b or c)<br></td>
+  </tr>
+  <tr>
+    <td>[^abc]</td>
+    <td>Not a or b or c<br></td>
+  </tr>
+  <tr>
+    <td>[a-q]</td>
+    <td>Letter from a to q<br></td>
+  </tr>
+  <tr>
+    <td>[A-Q]</td>
+    <td>Upper case letter from A to Q<br></td>
+  </tr>
+  <tr>
+    <td>[0-7]</td>
+    <td>Digit from 0 to 7<br></td>
+  </tr>
+  <tr>
+    <td>\n</td>
+    <td>nth group/subpattern<br></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">String Replacement<br></th>
+  </tr>
+  <tr>
+    <td>$n<br></td>
+    <td>nth non-passive group<br></td>
+  </tr>
+  <tr>
+    <td>$2</td>
+    <td>"xyz" in /^(abc(xyz))$/<br></td>
+  </tr>
+  <tr>
+    <td>$1</td>
+    <td>"xyz" in /^(?:abc)(xyz)$/<br></td>
+  </tr>
+  <tr>
+    <td>$`</td>
+    <td>Before matched string<br></td>
+  </tr>
+  <tr>
+    <td>$'</td>
+    <td>After matched string<br></td>
+  </tr>
+  <tr>
+    <td>$+</td>
+    <td>Last matched string<br></td>
+  </tr>
+  <tr>
+    <td>$&amp;</td>
+    <td>Entire matched string<br></td>
+  </tr>
+</table>
+    </div>
+  </div>
+<script src="js/dom.js"></script>
+</body>
+</html>
